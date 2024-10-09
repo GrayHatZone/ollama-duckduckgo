@@ -1,0 +1,9 @@
+FROM python:3.11.6-slim
+FROM ollama/ollama
+
+WORKDIR /app
+COPY . /app
+
+RUN pip install crewai duckduckgo-search langchain-community pysqlite3 crewai-tools
+
+CMD ["python", "main.py"]

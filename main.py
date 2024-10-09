@@ -3,7 +3,7 @@ from crewai_tools import tool
 from langchain.llms import Ollama
 from langchain_community.tools import DuckDuckGoSearchRun
 
-ollama_llm = Ollama(model="llama3.1:8b")
+ollama_llm = Ollama(model="openhermes")
 
 
 @tool("Duck_Duck_Go_Search")
